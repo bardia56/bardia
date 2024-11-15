@@ -1,0 +1,28 @@
+class Square:
+    # Constructor to initialize the side length of the square
+    def __init__(self, side_length):
+        self.side_length = side_length
+
+    # Method to calculate the area of the square
+    def calculate_area(self):
+        return self.side_length ** 2
+
+    # Method to calculate the perimeter of the square
+    def calculate_perimeter(self):
+        return 4 * self.side_length
+
+    # Method to display the square's details
+    def display_info(self):
+        area = self.calculate_area()
+        perimeter = self.calculate_perimeter()
+        print("Square Information:")
+        print(f"Side length: {self.side_length}")
+        print(f"Area: {area}")
+        print(f"Perimeter: {perimeter}")
+
+# Example usage:
+# Create a square with side length 5
+square = Square(5)
+
+# Display the square's information
+square.display_info()
